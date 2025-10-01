@@ -14,6 +14,12 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/mahasiswa', function () {
+    return view('mahasiswa');
+});
+
 Route::get('/profile', function () {
-    return view('profile');
+    $nama = 'Ummi Aulia';
+    //return view('profile' , compact ('nama'));
+    return view('profile')->with('nama', $nama);
 });
