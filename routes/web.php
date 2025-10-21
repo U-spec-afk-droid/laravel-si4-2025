@@ -32,3 +32,9 @@ Route::get('array',function(){
          $nilai_awal++;
     }
 });
+
+Route::get('array',function(){
+    for ($i=1; $i <= 5; $i++) {
+        echo 'Hello World ' . $i . 'x<br>';
+    }
+});
